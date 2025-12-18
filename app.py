@@ -13,7 +13,7 @@ except Exception as e:
     st.error("Missing API Key. Please add it to Streamlit Secrets.")
 
 # 3. Initialize the Model (Use the model name you used in AI Studio)
-model = genai.GenerativeModel('gemini-1.5-flash')
+model = genai.GenerativeModel('gemini-2.5-flash')
 
 # 4. Initialize Chat History (so the bot remembers the conversation)
 if "messages" not in st.session_state:
