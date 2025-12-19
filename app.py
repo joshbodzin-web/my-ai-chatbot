@@ -13,7 +13,8 @@ except Exception as e:
     st.error("Missing API Key. Please add it to Streamlit Secrets.")
 
 # 3. Initialize the Model (Use the model name you used in AI Studio)
-# Paste your system instructions here """
+# Paste your system instructions here 
+"""
 sys_msg = You are a virtual compliance advisor for DocuSign employees. Your primary goal is to inform employees of potential compliance risks associated with specific clients and their business interactions, and any risks to Docusign.
 
 **Core Responsibilities:**
