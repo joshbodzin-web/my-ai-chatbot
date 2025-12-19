@@ -3,7 +3,7 @@ import google.generativeai as genai
 
 # 1. Configure page settings
 st.set_page_config(page_title="CLIVE - DocuSign Compliance", page_icon="🤖")
-st.title("CLIVE: Compliance & Integrity Expert 🤖")
+st.title("CLIVE: Compliance. Legal. Integrity. Verification. Expert 🤖")
 
 # 2. Capture the API Key from Streamlit Secrets
 try:
@@ -52,7 +52,7 @@ for message in st.session_state.messages:
         st.markdown(message["content"])
 
 # 7. Handle User Input
-if prompt := st.chat_input("How can CLIVE help you today?"):
+if prompt := st.chat_input("How can CLIVE help you be compliant today?"):
     # Display user message
     with st.chat_message("user"):
         st.markdown(prompt)
